@@ -14,6 +14,7 @@ import CreateListing from "./pages/CreateListing";
 import Listing from "./pages/Listing";
 import Contact from "./pages/Contact";
 import EditListing from "./pages/EditListing";
+import PageNotFound from "./components/PageNotFound";
 
 
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/edit-listing/:listingId" element={<EditListing />} /> 
           <Route path="/category/:categoryName/:listingId" element={<Listing />} />
           <Route path="/contact/:landlordId" element={<Contact />} />
+          <Route path="*" element={<PageNotFound />}/>
         </Routes>
         <Navbar />
       </Router>
