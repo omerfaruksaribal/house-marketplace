@@ -51,7 +51,7 @@ function Register() {
       navigate('/')
 
     } catch (error) {
-      toast.error('Fill the missing part correctly', { autoClose: 5000 });
+      toast.error('Fill the missing part correctly', {autoClose: 5000});
     }
   }
 
